@@ -1,7 +1,7 @@
 
 import SwiftUI
 import Combine
-
+import Foundation
 
 @available(iOS 13.0, macOS 10.15, *)
 public struct ProfilePic: View {
