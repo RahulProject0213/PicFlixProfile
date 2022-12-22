@@ -3,7 +3,7 @@ import SwiftUI
 import Combine
 import Foundation
 
-@available(iOS 13.0, macOS 10.15, *)
+@available(iOS 13.0,macOS 10.15, *)
 public struct ProfilePic: View {
     
     @ObservedObject var binder = FetchProfileImage()
@@ -13,6 +13,8 @@ public struct ProfilePic: View {
     }
 
     public var body: some View {
-        Text("Hello World")
+        VStack {
+            CircularPicView(imageToRender: binder.image ?? UIImage())
+        }
     }
 }
